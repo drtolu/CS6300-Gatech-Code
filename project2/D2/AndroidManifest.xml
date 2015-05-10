@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.gatech.seclass.prj2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddCustomer"
+            android:label="@string/title_activity_add_customer"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.gatech.seclass.prj2.MainActivity" />
+        </activity>
+        <activity
+            android:name=".RunCreditCard"
+            android:label="@string/title_activity_run_credit_card"
+            android:parentActivityName=".AddCustomer" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.gatech.seclass.prj2.AddCustomer" />
+        </activity>
+        <activity
+            android:name=".ViewCustomers"
+            android:label="@string/title_activity_view_customers"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.gatech.seclass.prj2.MainActivity" />
+        </activity>
+        <activity
+            android:name=".EditCustomer"
+            android:label="@string/title_activity_edit_customer"
+            android:parentActivityName=".ViewCustomers" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.gatech.seclass.prj2.ViewCustomers" />
+        </activity>
+        <activity
+            android:name=".ViewCustomerTransactions"
+            android:label="@string/title_activity_view_customer_transactions"
+            android:parentActivityName=".ViewCustomers" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.gatech.seclass.prj2.ViewCustomers" />
+        </activity>
+        <activity
+            android:name=".TransactionSummary"
+            android:label="@string/title_transaction_summary"
+            android:parentActivityName=".ViewCustomers" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.gatech.seclass.prj2.ViewCustomers" />
+        </activity>        
+    </application>
+
+</manifest>

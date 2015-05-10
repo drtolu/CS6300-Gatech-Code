@@ -1,0 +1,156 @@
+
+Test Case 1  		<error>
+   NumberOfLinesInFile :  <0
+
+
+Test Case 2  		<error>
+   UserInputForTailCmd :  <0
+
+
+Test Case 3  		<error>
+   Presence of a file corresponding to the name :  Not present
+
+
+Test Case 4  		(Key = 2.2.2.)
+   NumberOfLinesInFile                          :  0
+   UserInputForTailCmd                          :  0
+   Presence of a file corresponding to the name :  Present
+
+
+Test Case 5  		(Key = 2.3.2.)
+   NumberOfLinesInFile                          :  0
+   UserInputForTailCmd                          :  >0
+   Presence of a file corresponding to the name :  Present
+
+
+Test Case 6  		(Key = 2.4.2.)
+   NumberOfLinesInFile                          :  0
+   UserInputForTailCmd                          :  MaxInt
+   Presence of a file corresponding to the name :  Present
+
+
+Test Case 7  		(Key = 3.2.2.)
+   NumberOfLinesInFile                          :  1
+   UserInputForTailCmd                          :  0
+   Presence of a file corresponding to the name :  Present
+
+
+Test Case 8  		(Key = 3.3.2.)
+   NumberOfLinesInFile                          :  1
+   UserInputForTailCmd                          :  >0
+   Presence of a file corresponding to the name :  Present
+
+
+Test Case 9  		(Key = 3.4.2.)
+   NumberOfLinesInFile                          :  1
+   UserInputForTailCmd                          :  MaxInt
+   Presence of a file corresponding to the name :  Present
+
+
+Test Case 10 		(Key = 4.2.2.)
+   NumberOfLinesInFile                          :  size - 1
+   UserInputForTailCmd                          :  0
+   Presence of a file corresponding to the name :  Present
+
+
+Test Case 11 		(Key = 4.3.2.)
+   NumberOfLinesInFile                          :  size - 1
+   UserInputForTailCmd                          :  >0
+   Presence of a file corresponding to the name :  Present
+
+
+Test Case 12 		(Key = 4.4.2.)
+   NumberOfLinesInFile                          :  size - 1
+   UserInputForTailCmd                          :  MaxInt
+   Presence of a file corresponding to the name :  Present
+
+
+Test Case 13 		(Key = 5.2.2.)
+   NumberOfLinesInFile                          :  size + 1
+   UserInputForTailCmd                          :  0
+   Presence of a file corresponding to the name :  Present
+
+
+Test Case 14 		(Key = 5.3.2.)
+   NumberOfLinesInFile                          :  size + 1
+   UserInputForTailCmd                          :  >0
+   Presence of a file corresponding to the name :  Present
+
+
+Test Case 15 		(Key = 5.4.2.)
+   NumberOfLinesInFile                          :  size + 1
+   UserInputForTailCmd                          :  MaxInt
+   Presence of a file corresponding to the name :  Present
+
+
+Test Case 16 		(Key = 6.2.2.)
+   NumberOfLinesInFile                          :  size*2
+   UserInputForTailCmd                          :  0
+   Presence of a file corresponding to the name :  Present
+
+
+Test Case 17 		(Key = 6.3.2.)
+   NumberOfLinesInFile                          :  size*2
+   UserInputForTailCmd                          :  >0
+   Presence of a file corresponding to the name :  Present
+
+
+Test Case 18 		(Key = 6.4.2.)
+   NumberOfLinesInFile                          :  size*2
+   UserInputForTailCmd                          :  MaxInt
+   Presence of a file corresponding to the name :  Present
+
+
+Test Case 19 		(Key = 7.2.2.)
+   NumberOfLinesInFile                          :  size*2 - 1
+   UserInputForTailCmd                          :  0
+   Presence of a file corresponding to the name :  Present
+
+
+Test Case 20 		(Key = 7.3.2.)
+   NumberOfLinesInFile                          :  size*2 - 1
+   UserInputForTailCmd                          :  >0
+   Presence of a file corresponding to the name :  Present
+
+
+Test Case 21 		(Key = 7.4.2.)
+   NumberOfLinesInFile                          :  size*2 - 1
+   UserInputForTailCmd                          :  MaxInt
+   Presence of a file corresponding to the name :  Present
+
+
+Test Case 22 		(Key = 8.2.2.)
+   NumberOfLinesInFile                          :  size*2 + 1
+   UserInputForTailCmd                          :  0
+   Presence of a file corresponding to the name :  Present
+
+
+Test Case 23 		(Key = 8.3.2.)
+   NumberOfLinesInFile                          :  size*2 + 1
+   UserInputForTailCmd                          :  >0
+   Presence of a file corresponding to the name :  Present
+
+
+Test Case 24 		(Key = 8.4.2.)
+   NumberOfLinesInFile                          :  size*2 + 1
+   UserInputForTailCmd                          :  MaxInt
+   Presence of a file corresponding to the name :  Present
+
+
+Test Case 25 		(Key = 9.2.2.)
+   NumberOfLinesInFile                          :  MaxInt
+   UserInputForTailCmd                          :  0
+   Presence of a file corresponding to the name :  Present
+
+
+Test Case 26 		(Key = 9.3.2.)
+   NumberOfLinesInFile                          :  MaxInt
+   UserInputForTailCmd                          :  >0
+   Presence of a file corresponding to the name :  Present
+
+
+Test Case 27 		(Key = 9.4.2.)
+   NumberOfLinesInFile                          :  MaxInt
+   UserInputForTailCmd                          :  MaxInt
+   Presence of a file corresponding to the name :  Present
+

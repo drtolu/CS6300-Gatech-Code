@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">StallManager</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_add_customer">AddCustomer</string>
+    <string name="title_activity_run_credit_card">RunCreditCard</string>
+    <string name="title_activity_view_customers">ViewCustomers</string>
+    <string name="title_activity_edit_customer">EditCustomer</string>
+    <string name="title_activity_view_customer_transactions">ViewCustomerTransactions</string>
+	<string name="title_transaction_summary">TransactionSummary</string>
+</resources>

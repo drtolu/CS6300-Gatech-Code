@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd"
+    tools:context="$edu.gatech.seclass.prj2.EditCustomer" >
+    
+    <Button
+        android:id="@+id/btnEditCustomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtEmail"
+        android:layout_alignRight="@+id/txtEmail"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="21dp"
+        android:onClick="editCustomer"
+        android:text="Edit Customer" />
+
+    <EditText
+        android:id="@+id/etEditFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etEditLastName"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignStart="@+id/textView1"
+        android:layout_marginBottom="51dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etEditLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etEditZip"
+        android:layout_alignLeft="@+id/etEditFirstName"
+        android:layout_alignRight="@+id/etEditFirstName"
+        android:layout_alignStart="@+id/etEditFirstName"
+        android:layout_marginBottom="51dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnEditCustomer"
+        android:layout_alignLeft="@+id/etEditZip"
+        android:layout_alignRight="@+id/etEditZip"
+        android:layout_marginBottom="52dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Email@domain.com"
+        android:inputType="textEmailAddress"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etEditZip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtEmail"
+        android:layout_alignLeft="@+id/etEditLastName"
+        android:layout_alignRight="@+id/etEditLastName"
+        android:layout_marginBottom="49dp"
+        android:ems="10"
+        android:hint="Zip Code"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:minEms="14"
+        android:text="Edit enter customer info"
+        android:textSize="16sp" />
+    
+</RelativeLayout>

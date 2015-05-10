@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+     <item  
+        android:id="@+id/EditCustomerClass"  
+        android:title="Edit Customer"/>  
+
+    <item  
+        android:id="@+id/RunCreditCardClass"  
+        android:title="Checkout Customer"/>  
+        
+    <item  
+        android:id="@+id/ViewTransactionsClass"  
+        android:title="View Customer Transactions"/>  
+</menu>

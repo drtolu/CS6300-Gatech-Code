@@ -1,0 +1,26 @@
+# File
+  NumberOfLinesInFile:
+      <0.              [error]
+      0.               [Single][property emptyFile]    
+      1.               [if !emptyFile]
+      size - 1.        [if !emptyFile]
+      size + 1.        [if !emptyFile]
+      size*2.          [if !emptyFile]
+      size*2 - 1.      [if !emptyFile]
+      size*2 + 1.      [if !emptyFile]             
+      MaxInt.          [if !emptyFile]
+  
+
+# NumLinesUserEntered size
+  UserInputForTailCmd:
+   <0.                       [error]
+    0.                       [Single][property DisplayNothing]
+   >0.                       [if !DisplayNothing]
+   NoArgumentProvided        [if !DisplayNothing][property DefaultSizeFive]
+   MaxInt.                   [if !DisplayNothing]
+
+
+# FileName
+  Presence of a file corresponding to the name:
+  Not present.               [error]
+  Present.            

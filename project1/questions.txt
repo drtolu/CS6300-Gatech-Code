@@ -1,0 +1,2 @@
+What languages does the program need to support?
+Are there lines of text in the essays that are not sentences (for example a line for their name or studentId)?

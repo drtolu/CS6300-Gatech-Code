@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd"
+    tools:context="$edu.gatech.seclass.prj2.AddCustomer" >
+    
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etEmail"
+        android:layout_alignRight="@+id/etEmail"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="21dp"
+         android:onClick="addCustomer"
+        android:text="Add Customer" />
+
+    <EditText
+        android:id="@+id/etFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etLastName"
+        android:layout_alignRight="@+id/tvMsg"
+        android:layout_alignLeft="@+id/tvMsg"
+        android:layout_alignStart="@+id/tvMsg"
+        android:layout_marginBottom="51dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName" >
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/etLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etZip"
+        android:layout_alignLeft="@+id/etFirstName"
+        android:layout_alignRight="@+id/etFirstName"
+        android:layout_alignStart="@+id/etFirstName"
+        android:layout_marginBottom="51dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName" >
+
+        
+    </EditText>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSubmit"
+        android:layout_alignLeft="@+id/etZip"
+        android:layout_alignRight="@+id/etZip"
+        android:layout_marginBottom="52dp"
+        android:ems="10"
+        android:hint="Email@domain.com"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etZip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etEmail"
+        android:layout_alignLeft="@+id/etLastName"
+        android:layout_alignRight="@+id/etLastName"
+        android:layout_marginBottom="49dp"
+        android:ems="10"
+        android:hint="Zip Code"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/tvMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:minEms="14"
+        android:text="Please enter customer info"
+        android:textSize="16sp" />
+    
+</RelativeLayout>

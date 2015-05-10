@@ -1,0 +1,233 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Calculator"
+        android:textSize="@android:dimen/app_icon_size" />
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="39dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="@android:dimen/app_icon_size" />
+
+    <Button
+        android:id="@+id/seven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/output"
+        android:layout_marginTop="40dp"
+        android:text="7"
+        android:textSize="@android:dimen/app_icon_size"
+        android:layout_alignParentStart="true"
+        android:onClick="handleClick" />
+
+    <Button
+        android:id="@+id/eight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/seven"
+        android:layout_alignBottom="@+id/seven"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/seven"
+        android:text="8"
+        android:textSize="@android:dimen/app_icon_size"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/seven" 
+        android:onClick="handleClick"/>
+
+    <Button
+        android:id="@+id/nine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/eight"
+        android:layout_alignBottom="@+id/eight"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/eight"
+        android:text="9"
+        android:textSize="@android:dimen/app_icon_size"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/eight"
+        android:onClick="handleClick" />
+
+    <Button
+        android:id="@+id/four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seven"
+        android:layout_toLeftOf="@+id/eight"
+        android:text="4"
+        android:textSize="@android:dimen/app_icon_size"
+        android:layout_toStartOf="@+id/eight"
+        android:onClick="handleClick" />
+
+    <Button
+        android:id="@+id/five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/four"
+        android:layout_alignBottom="@+id/four"
+        android:layout_toLeftOf="@+id/nine"
+        android:text="5"
+        android:textSize="@android:dimen/app_icon_size" 
+        android:layout_toStartOf="@+id/nine"
+        android:onClick="handleClick"/>
+
+    <Button
+        android:id="@+id/two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/five"
+        android:layout_toLeftOf="@+id/nine"
+        android:text="2"
+        android:textSize="@android:dimen/app_icon_size"
+        android:layout_toStartOf="@+id/nine"
+        android:onClick="handleClick" />
+
+    <Button
+        android:id="@+id/six"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/three"
+        android:layout_alignLeft="@+id/nine"
+        android:text="6"
+        android:textSize="@android:dimen/app_icon_size"
+        android:layout_alignStart="@+id/nine" 
+        android:onClick="handleClick"/>
+
+    <Button
+        android:id="@+id/three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/two"
+        android:layout_alignBottom="@+id/two"
+        android:layout_alignLeft="@+id/six"
+        android:text="3"
+        android:textSize="@android:dimen/app_icon_size" 
+        android:layout_alignStart="@+id/six"
+        android:onClick="handleClick"/>
+
+    <Button
+        android:id="@+id/one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/four"
+        android:layout_toLeftOf="@+id/eight"
+        android:text="1"
+        android:textSize="@android:dimen/app_icon_size" 
+        android:layout_toStartOf="@+id/eight"
+        android:onClick="handleClick"/>
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/two"
+        android:layout_toLeftOf="@+id/nine"
+        android:text="C"
+        android:textSize="@android:dimen/app_icon_size"
+        android:layout_toStartOf="@+id/nine" 
+        android:onClick="handleClick"/>
+
+    <Button
+        android:id="@+id/equals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/clear"
+        android:layout_alignBottom="@+id/clear"
+        android:layout_alignLeft="@+id/three"
+        android:layout_alignParentRight="true"
+        android:text="="
+        android:textSize="@android:dimen/app_icon_size" 
+        android:layout_alignStart="@+id/three"
+        android:layout_alignParentEnd="true"
+        android:onClick="handleClick"/>
+
+    <Button
+        android:id="@+id/zero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/clear"
+        android:layout_alignBottom="@+id/clear"
+        android:layout_toLeftOf="@+id/eight"
+        android:text="0"
+        android:textSize="@android:dimen/app_icon_size"
+        android:layout_toStartOf="@+id/eight" 
+        android:onClick="handleClick"/>
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/six"
+        android:layout_alignBottom="@+id/six"
+        android:layout_alignParentRight="true"
+        android:text="-"
+        android:textSize="@android:dimen/app_icon_size"
+        android:layout_alignParentEnd="true" 
+        android:onClick="handleClick"/>
+
+    <Button
+        android:id="@+id/multiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/three"
+        android:text="*"
+        android:textSize="@android:dimen/app_icon_size" 
+        android:layout_alignParentEnd="true"
+        android:onClick="handleClick"/>
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/minus"
+        android:layout_alignParentRight="true"
+        android:text="+"
+        android:textSize="@android:dimen/app_icon_size"
+        android:layout_alignParentEnd="true" 
+        android:onClick="handleClick"/>
+
+    <EditText
+        android:id="@+id/errormsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/eight"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/eight"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/errormsg"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="0"
+        android:textSize="@android:dimen/app_icon_size"
+        android:layout_alignParentEnd="true" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

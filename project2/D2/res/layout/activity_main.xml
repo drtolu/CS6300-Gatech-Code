@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#dddddd"
+    tools:context="edu.gatech.seclass.prj2.MainActivity" >
+
+    <Button
+        android:id="@+id/btnManageCust"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:onClick="btnClick"
+        android:text="Edit/Checkout Customer" />
+
+
+    <Button
+        android:id="@+id/btnAddCust"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnManageCust"
+        android:layout_alignLeft="@+id/btnManageCust"
+        android:layout_alignRight="@+id/btnManageCust"
+        android:layout_marginBottom="36dp"
+        android:onClick="btnClick"
+        android:text="Add Customers" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:gravity="center_horizontal"
+        android:text="Welcome!"
+        android:textSize="18dp" />
+        
+</RelativeLayout>

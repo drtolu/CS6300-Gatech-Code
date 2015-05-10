@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#dddddd"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context="edu.gatech.seclass.prj2.ViewCustomerTransactions" >
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.17"
+        android:gravity="center_horizontal"
+        android:text="View Customer Transactions"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/lstTransactions"
+        android:layout_width="wrap_content"
+        android:layout_height="349dp"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_weight="1"
+        android:dividerHeight="3px"
+        android:longClickable="true"
+        android:textAlignment="center"
+        android:visibility="visible" >
+
+    </ListView>
+
+</LinearLayout>

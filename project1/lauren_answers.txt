@@ -1,0 +1,7 @@
+What languages does the program need to support?
+A: The application should be language independent. Or in other words, the program will consider all charcters valid. Any combination of characters can be counted as a word. 
+The words "test, examen, esame" although in different languages, would count as 1 word each. A student could even write te$t and the program should count it as one word. 
+
+
+Are there lines of text in the essays that are not sentences (for example a line for their name or studentId)?
+Consider ALL text in the document. Don't worry about if the content actually makes sense.

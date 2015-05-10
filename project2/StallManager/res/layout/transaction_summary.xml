@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/tvMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:gravity="center_horizontal"
+        android:minEms="14"
+        android:text=""
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/todaysDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnMainMenu"
+        android:layout_alignLeft="@+id/tvMsg"
+        android:layout_alignRight="@+id/tvMsg"
+        android:layout_marginBottom="110dp"
+        android:gravity="center"
+        android:text="TodaysDate"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/transactionAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/todaysDate"
+        android:layout_alignLeft="@+id/todaysDate"
+        android:layout_alignRight="@+id/todaysDate"
+        android:layout_marginBottom="36dp"
+        android:text="TransactionAmount"
+        android:gravity="center"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/customerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/transactionAmount"
+        android:layout_alignLeft="@+id/transactionAmount"
+        android:layout_alignRight="@+id/transactionAmount"
+        android:layout_marginBottom="36dp"
+        android:gravity="center"
+        android:text="CustomerName"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnMainMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:onClick="returnToMainMenu"
+        android:text="Return to Main Menu" />
+
+    <TextView
+        android:id="@+id/tvOriginal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/customerName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="39dp"
+        android:gravity="center"
+        android:text="CustomerName"
+        android:textSize="16sp" />
+
+</RelativeLayout>
